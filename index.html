@@ -1,9 +1,158 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>OnlyMemes</title>
-  </head>
-  <body>
-    <h1>OnlyMemes is live</h1>
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OnlyMemes</title>
+  <meta name="description" content="OnlyMemes is live. Download on iOS and Android." />
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background: radial-gradient(1200px 600px at 20% 10%, #2a1bff22, transparent 60%),
+                  radial-gradient(900px 500px at 80% 30%, #ff1bb022, transparent 55%),
+                  radial-gradient(1000px 700px at 50% 100%, #00ffd522, transparent 60%),
+                  #07070b;
+      color: #e9e9f2;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 28px;
+    }
+    .card {
+      width: min(980px, 100%);
+      border: 1px solid #ffffff14;
+      background: linear-gradient(180deg, #0d0d14cc, #0a0a10cc);
+      border-radius: 24px;
+      padding: 34px;
+      box-shadow: 0 30px 120px #00000080;
+      backdrop-filter: blur(10px);
+    }
+    .top {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .logo {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #6b5bff, #ff4bd1, #00ffd5);
+      box-shadow: 0 0 18px #6b5bff55;
+    }
+    h1 {
+      margin: 20px 0 8px;
+      font-size: clamp(36px, 6vw, 64px);
+      line-height: 1.02;
+      letter-spacing: -0.02em;
+    }
+    p {
+      margin: 0;
+      color: #c9c9d9;
+      font-size: 18px;
+      line-height: 1.5;
+      max-width: 60ch;
+    }
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+    a.btn {
+      text-decoration: none;
+      color: #0b0b10;
+      background: linear-gradient(135deg, #ffffff, #d7d7ff);
+      padding: 14px 18px;
+      border-radius: 14px;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      border: 1px solid #ffffff30;
+    }
+    a.btn.secondary {
+      background: transparent;
+      color: #e9e9f2;
+      border: 1px solid #ffffff20;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 26px;
+    }
+    .pill {
+      border: 1px solid #ffffff14;
+      border-radius: 18px;
+      padding: 16px;
+      background: #0b0b12aa;
+      color: #d8d8e6;
+      min-height: 86px;
+    }
+    .pill b { display:block; margin-bottom: 6px; color:#f2f2ff; }
+    .footer {
+      margin-top: 18px;
+      color: #9a9ab0;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    code {
+      background: #ffffff10;
+      padding: 2px 6px;
+      border-radius: 8px;
+      border: 1px solid #ffffff14;
+      color: #e9e9f2;
+    }
+    @media (max-width: 780px) {
+      .grid { grid-template-columns: 1fr; }
+      .card { padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="top">
+      <div class="logo"><span class="dot"></span> ONLYMEMES</div>
+      <div style="color:#9a9ab0;font-weight:700">iOS + Android • Live</div>
+    </div>
+
+    <h1>OnlyMemes is live.</h1>
+    <p>
+      A chaotic, fast, and stupidly fun meme app. Download it and join the early wave.
+    </p>
+
+    <div class="cta-row">
+      <a class="btn" href="https://apps.apple.com/app/id6757876742">Download on iOS</a>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.rj.onlymemes">Download on Android</a>
+      <a class="btn secondary" href="https://get.onlymemes.net">Smart link (QR)</a>
+    </div>
+
+    <div class="grid">
+      <div class="pill"><b>Built for speed</b>Open, laugh, post, repeat. No ceremony.</div>
+      <div class="pill"><b>Early = power</b>Right now you can shape what this becomes.</div>
+      <div class="pill"><b>Sticker-ready</b>Use <code>get.onlymemes.net</code> for QR scans.</div>
+    </div>
+
+    <div class="footer">
+      <span>© OnlyMemes</span>
+      <span>Contact: <code>support@onlymemes.net</code></span>
+    </div>
+  </main>
+</body>
 </html>
